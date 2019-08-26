@@ -1,9 +1,10 @@
 class SessionsController < ApplicationController
 
-  def new 
-  end 
+  def new
+  end
 
   def create
-  end 
+    user = User.find_by(name: params[:user][:name])
+  end
 
 end
